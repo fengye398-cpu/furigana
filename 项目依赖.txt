@@ -1,0 +1,23 @@
+pykakasi注音  sudachipy 分词 pysrt 字幕文件的解析与操作
+
+1.更新pip最新版本：python -m pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+2.安装项目所需依赖：pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pykakasi==2.3.0 pysrt==1.1.2 SudachiPy==0.6.10 SudachiDict-core==20250825 pyinstaller==6.16.0 tkinterdnd2==0.3.0
+
+3.项目文件根目录下输入CMD创建虚拟环境：python -m venv .venv
+
+4.在项目文件根目录下输入CMD激活虚拟环境中：.venv\Scripts\activate
+
+5.项目开发python版本：python 3.10.10
+
+6.打包命令：python D:\桌面\JP_EN注音\build_config.py
+
+pysrt==1.1.2
+chardet==5.2.0
+sudachipy==0.6.10
+sudachidict-core==20250825
+pykakasi==2.3.0
+pypinyin
+tkinterdnd2==0.3.0
+pyinstaller==6.13.0
+
