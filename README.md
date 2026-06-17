@@ -1,4 +1,4 @@
-1.这是一个中文 日文 英文均可注音的工具 旨在帮助观看影视剧的语言学习者
+1.这是一个中文 日文 英文均可注音的工具 旨在帮助观看影视剧的语言学习者This tool supports phonetic notation for Chinese, Japanese and English, designed to assist language learners who watch films and TV series.
 
 2.教程网址:https://www.bilibili.com/video/BV1etyrBnE96
 
