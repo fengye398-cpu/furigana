@@ -10,7 +10,7 @@ pykakasi注音  sudachipy 分词 pysrt 字幕文件的解析与操作
 
 5.项目开发python版本：python 3.10.10
 
-6.打包命令：python D:\桌面\JP_EN注音\build_config.py
+6.打包命令：python D:\桌面\JP_EN注音\build_config.py(如果是从github上下载的代码一级目录要改成D:\桌面\JP_EN注音)
 
 pysrt==1.1.2
 chardet==5.2.0
