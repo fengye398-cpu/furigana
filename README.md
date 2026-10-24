@@ -1,4 +1,5 @@
-1.这是一个中文 日文 英文均可注音的工具 旨在帮助观看影视剧的语言学习者This tool supports phonetic notation for Chinese, Japanese and English, designed to assist language learners who watch films and TV series.
+1.看剧学语言的注音神器：给中文、日文、英文字幕一键加注音（假名/拼音/音标），支持 SRT 与 TXT；SRT 可导出 ASS、HTML，TXT 可导出 Word、HTML。
+Add furigana, pinyin & IPA to Chinese, Japanese and English subtitles in one click. Learn languages from TV shows and films. SRT → ASS/HTML, TXT → Word/HTML.
 
 2.教程网址:https://www.bilibili.com/video/BV1etyrBnE96
 
