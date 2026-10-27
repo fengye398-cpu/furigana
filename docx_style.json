@@ -1,0 +1,91 @@
+// ============================================================================
+// docx 注音样式配置（TXT 文件注音输出的 .docx 使用）
+//
+// 使用说明
+//   1. 本文件放在程序旁边（源码运行：与 docx_ruby.py 同目录；打包后：与 exe 同目录）。
+//   2. 删除本文件，或文件内容与程序内置默认值一致，输出都是默认样式。
+//   3. 只想改某一项时，可以只保留该语言和该字段，其余字段会自动用内置默认值。
+//   4. 以 // 开头的行是注释，会被忽略。字符串内的 // 不受影响。
+//   5. 写错的字段不会导致处理失败：该字段回退默认值，并在日志里提示。
+//   6. 改完保存，下次处理 TXT 时直接生效，不需要重新打包。
+//   7. 程序内置默认值调整后，请同步修改本文件，否则本文件里的旧值会盖掉新默认值。
+//
+// 日语 japanese / 中文 chinese / 英语 english 三种模式各自独立设置。
+//
+// 字段说明
+//   base_font     原文字体名，需是系统已安装的字体。目标机器没有该字体时 Word 会自动替换。
+//   ruby_font     注音字体名。留空 "" 则与 base_font 相同。
+//   east_font     中日文字符所用字体。留空 "" 则与 base_font 相同。
+//                 主要用于英语模式：英文正文用 base_font，夹杂的中日文用 east_font。
+//   base_size     原文字号，单位磅，可写小数（如 10.5），范围 1-72。
+//   ruby_size     注音字号，单位磅，可写小数，范围 1-72。网页版为 0.7em，约 8.5 磅。
+//   base_color    原文颜色，6 位十六进制，不带 #（如 000000 为黑）。留空 "" 为自动色。
+//   ruby_color    注音颜色，格式同上。网页版为 999999（浅灰）。
+//   ruby_align    注音在原文上方的对齐方式，可选：
+//                   center            居中，按注音自然字距排列。注音比原文窄时用，字母间不会被拉开
+//                   distributeSpace   两端对齐，注音比原文宽时均匀分布
+//                   distributeLetter  字符均匀分布
+//                   left / right      靠左 / 靠右
+//                 注意：注音比原文窄时若用 distributeSpace，注音字母之间会出现空隙。
+//   ruby_raise    注音与原文的距离，单位磅，范围 0.5-36。
+//                 "auto" 表示按字号自动估算（推荐）；若出现注音贴着原文，改成具体数字如 12 试试。
+//   line_spacing  行距倍数，范围 0.5-3。1.0 为单倍。注音被上一行遮挡或太挤时可调大，如 1.2。
+//   blank_between 每个非空行后是否追加一个空行。true 为注音行之间空一行，false 为紧挨着。
+//                 TXT 里原有的空行不受此项影响，始终保留。
+//   trans_font    TXT 双语时译文的字体名。留空 "" 则与 base_font 相同。
+//   trans_size    译文字号，单位磅，可写小数，范围 1-72。网页版为 13px，约 9.75 磅；Word 字号只能是 0.5 磅的整数倍，默认取 10。
+//   trans_color   译文颜色，6 位十六进制，不带 #。网页版为 595959（深灰）。留空 "" 为自动色。
+//                 以上三项只在“设置”窗口勾选“双语”时用到；译文不带注音，不使用 ruby_* 字段。
+//
+// TXT 输出 docx / html 的开关不在本文件：在程序“设置”窗口的“TXT 导出”里勾选（默认只输出 docx）。
+// ============================================================================
+{
+  "japanese": {
+    "base_font": "Yu Mincho",
+    "ruby_font": "Yu Mincho",
+    "east_font": "",
+    "base_size": 12,
+    "ruby_size": 8.5,
+    "base_color": "",
+    "ruby_color": "999999",
+    "ruby_align": "distributeSpace",
+    "ruby_raise": "auto",
+    "line_spacing": 1.0,
+    "blank_between": true,
+    "trans_font": "",
+    "trans_size": 10,
+    "trans_color": "595959"
+  },
+  "chinese": {
+    "base_font": "宋体",
+    "ruby_font": "宋体",
+    "east_font": "",
+    "base_size": 12,
+    "ruby_size": 8.5,
+    "base_color": "",
+    "ruby_color": "999999",
+    "ruby_align": "center",
+    "ruby_raise": "auto",
+    "line_spacing": 1.0,
+    "blank_between": true,
+    "trans_font": "",
+    "trans_size": 10,
+    "trans_color": "595959"
+  },
+  "english": {
+    "base_font": "Times New Roman",
+    "ruby_font": "Cambria",
+    "east_font": "宋体",
+    "base_size": 12,
+    "ruby_size": 8.5,
+    "base_color": "",
+    "ruby_color": "999999",
+    "ruby_align": "center",
+    "ruby_raise": "auto",
+    "line_spacing": 1.0,
+    "blank_between": true,
+    "trans_font": "",
+    "trans_size": 10,
+    "trans_color": "595959"
+  }
+}

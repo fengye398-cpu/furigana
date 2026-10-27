@@ -1,0 +1,9 @@
+pysrt==1.1.2
+chardet==5.2.0
+sudachipy==0.6.10
+sudachidict-core==20250825
+pykakasi==2.3.0
+pypinyin==0.55.0
+tkinterdnd2==0.3.0
+pyinstaller==6.13.0
+

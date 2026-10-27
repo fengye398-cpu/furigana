@@ -1,0 +1,43 @@
+{
+ "version": 2,
+ "mode": "adopt",
+ "source": "[S1.Ep3] Peppa Pig - Teddy’s Day Out.srt",
+ "model": "deepseek-flash",
+ "veto_chars": 2,
+ "groups": {
+  "001": {
+   "surface": "斑馬",
+   "current": "ぶちうま",
+   "reading": "しまうま",
+   "options": [
+    "しまうま",
+    "はんば",
+    "ぶちうま",
+    "まだらうま",
+    "はんうま"
+   ],
+   "count": 1,
+   "ok": true,
+   "width": [
+    2,
+    2
+   ],
+   "effective": 1,
+   "total": 1,
+   "collateral": 0,
+   "rules": [
+    [
+     "",
+     "のゾ"
+    ]
+   ],
+   "ctx": [
+    [
+     "",
+     "のゾーイとそ"
+    ]
+   ],
+   "free": false
+  }
+ }
+}
