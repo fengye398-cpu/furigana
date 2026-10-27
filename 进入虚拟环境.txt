@@ -1,3 +1,0 @@
-cd D:\桌面\JP_EN注音
-.venv\Scripts\activate
-python test_ui_test2_copy_6.py
